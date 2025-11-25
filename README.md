@@ -81,13 +81,7 @@ O site inclui:
 - Scroll suave entre seções
 
 ---
-
-1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/seu-usuario/la-casa-de-papel-web.git
-   cd la-casa-de-papel-web
-   ```
-   ## 📝 Licença
+ ## 📝 Licença
 
 Este projeto está licenciado sob a **Licença MIT** - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
