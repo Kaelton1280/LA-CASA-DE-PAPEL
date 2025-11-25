@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de Papel - Site Oficial</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" onclick="scrollTo('home')">
+                    <span class="logo-icon">🎬</span>
+                    <span>La Casa de Papel</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav">
+                    <button class="menu-toggle" id="menuToggle">☰</button>
+                    <ul class="nav-list" id="navList">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#personagens" class="nav-link">Personagens</a></li>
+                        <li><a href="#heists" class="nav-link">Roubos</a></li>
+                        <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                        <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                        <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">🎬 Série Espanhola de Crime</span>
+                <h1 class="hero-title">
+                    La Casa de <span class="highlight">Papel</span>
+                </h1>
+                <p class="hero-subtitle">
+                    O maior roubo da história da Espanha. Siga a jornada épica do Professor e sua equipe.
+                </p>
+
+                <!-- Statistics -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div>Temporadas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50</div>
+                        <div>Episódios</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">190M+</div>
+                        <div>Visualizações</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Text Content -->
+                    <div class="about-text">
+                        <h2>Sobre a Série</h2>
+                        <p>
+                            La Casa de Papel é uma série de crime criada por Álex Pina.
+                            Segue um grupo de criminosos que executam dois dos maiores roubos
+                            da história da Espanha sob a liderança do Professor.
+                        </p>
+                        <p>
+                            Com reviravoltas inesperadas, personagens complexos e planos intrincados,
+                            conquistou audiências em todo o mundo.
+                        </p>
+                        
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="about-info">
+                        <div class="info-item">
+                            <div>📺</div>
+                            <div>
+                                <h3>Criador</h3>
+                                <p>Álex Pina</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div>🌍</div>
+                            <div>
+                                <h3>Origem</h3>
+                                <p>Espanha</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div>📱</div>
+                            <div>
+                                <h3>Plataforma</h3>
+                                <p>Netflix</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div>🎬</div>
+                            <div>
+                                <h3>Gênero</h3>
+                                <p>Crime, Roubo, Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PERSONAGENS SECTION ========== -->
+        <section id="personagens" class="section">
+            <div class="container">
+                <h2 class="section-title">Personagens</h2>
+                <div class="personagens-grid" id="personagensGrid"></div>
+            </div>
+        </section>
+
+        <!-- ========== HEISTS SECTION ========== -->
+        <section id="heists" class="section">
+            <div class="container">
+                <h2 class="section-title">Os Roubos</h2>
+                <div id="heistsContainer"></div>
+            </div>
+        </section>
+
+        <!-- ========== TIMELINE SECTION ========== -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <h2 class="section-title">Timeline</h2>
+                <div id="timelineContainer"></div>
+            </div>
+        </section>
+
+        <!-- ========== GALERIA SECTION ========== -->
+        <section id="galeria" class="section">
+            <div class="container">
+                <h2 class="section-title">Galeria</h2>
+                <div class="galeria-filters" id="galeriaFilters"></div>
+                <div class="galeria-grid" id="galeriaGrid"></div>
+            </div>
+        </section>
+
+        <!-- ========== QUIZ SECTION ========== -->
+        <section id="quiz" class="section">
+            <div class="container-small">
+                <h2 class="section-title">Quiz</h2>
+                <div id="quizContainer"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>La Casa de Papel</h3>
+                    <p>Uma série espanhola que conquistou o mundo.</p>
+                </div>
+                <div>
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#personagens">Personagens</a></li>
+                        <li><a href="#heists">Roubos</a></li>
+                        <li><a href="#quiz">Quiz</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Informações</h3>
+                    <ul>
+                        <li>Criador: Álex Pina</li>
+                        <li>Rede: Netflix</li>
+                        <li>Temporadas: 5</li>
+                        <li>Episódios: 50</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Casa de Papel Web | Site de fãs não oficial</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== MODALS ========== -->
+    <!-- Character Modal -->
+    <div id="characterModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galeriaModal" class="modal">
+        <div class="modal-galeria">
+            <button class="modal-close" onclick="closeGaleriaModal()">&times;</button>
+            <button class="modal-nav prev" onclick="previousImage()">❮</button>
+            <div id="modalMedia"></div>
+            <button class="modal-nav next" onclick="nextImage()">❯</button>
+            <div id="modalImageInfo"></div>
+        </div>
+    </div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
