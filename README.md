@@ -83,7 +83,7 @@ O site inclui:
 ---
  ## 📝 Licença
 
-Este projeto está licenciado sob a **Licença MIT** -<a>https://professionalprogramsmit.com/<a> para detalhes.
+Este projeto está licenciado sob a **Licença MIT** -[Licença.com](https://professionalprogramsmit.com/) para detalhes.
 
 **Aviso**: Este é um site de fãs não oficial. La Casa de Papel é uma produção da Netflix.
 
