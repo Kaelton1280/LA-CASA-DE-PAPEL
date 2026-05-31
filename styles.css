@@ -34,6 +34,8 @@ body {
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
+    scrollbar-width: thin; /* Compatibilidade com navegadores antigos */
+    scrollbar-color: var(--border) transparent; /* Compatibilidade com navegadores antigos */
 }
 
 /* ========== CONTAINERS ========== */
